@@ -8,6 +8,10 @@ import java.util.ArrayList;
 import java.util.List;
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+/**
+ * Used by Grid to organize GridConstraints based on their Orientation and whether they are CONSTANT or PERCENT
+ * @author Deaddorks
+ */
 public class GridConstraintList
 {
 	

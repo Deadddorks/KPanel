@@ -14,6 +14,11 @@ import java.util.ArrayList;
 import java.util.List;
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+/**
+ * Used by the KPanel to organize Nodes in a Grid fashion.<br>
+ * Also deals with the delegation of all Events to Nodes
+ * @author Deaddorks
+ */
 public class Grid
 {
 	

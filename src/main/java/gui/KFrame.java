@@ -4,6 +4,10 @@ package gui;
 import javax.swing.JFrame;
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+/**
+ * Allows easy creation of a JFrame that links well with the KPanel class
+ * @author Deaddorks
+ */
 public abstract class KFrame extends JFrame
 {
 	
@@ -18,6 +22,10 @@ public abstract class KFrame extends JFrame
 	
 	// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	
+	/**
+	 * Creates a KPanel with the specified JPanel as its child
+	 * @param panel the specified KPanel
+	 */
 	public KFrame(KPanel panel)
 	{
 		setResizable(DEFAULT_RESIZABLE);
@@ -31,6 +39,9 @@ public abstract class KFrame extends JFrame
 		setVisible(true);
 	}
 	
+	/**
+	 * Method that allows the extending class to initialize JFrame settings before the JFrame is displayed
+	 */
 	public abstract void settings_initFrame();
 	
 }

@@ -4,6 +4,10 @@ package structure.orgainization;
 import exceptions.InvalidParameterException;
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+/**
+ * Used by GridConstraints in order to easily allow Nodes to have a default offset from the actual main GridConstraint
+ * @author Deaddorks
+ */
 public class Padding
 {
 	

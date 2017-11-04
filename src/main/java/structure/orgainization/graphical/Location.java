@@ -4,6 +4,10 @@ package structure.orgainization.graphical;
 import java.awt.event.MouseEvent;
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+/**
+ * A simple (x,y) representation used to denote a Location and
+ * remove some of the complication and unnecessary information from MouseEvents in cases where it is not needed
+ */
 public class Location
 {
 	

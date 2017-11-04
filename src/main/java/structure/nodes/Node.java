@@ -16,6 +16,12 @@ import java.awt.event.MouseWheelEvent;
 import java.util.function.Consumer;
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+/**
+ * The main source of organization within a grid.<br>
+ * Classes can extend Node and have all of the essentials necessary for getting their area and handling inputs,
+ * all that needs to happen is the actions on event triggers need to be defined, although this is not necessary
+ * @author Deaddorks
+ */
 public abstract class Node
 {
 	
@@ -161,6 +167,7 @@ public abstract class Node
 		// Event Handling
 		listenForMouseEvents = false;
 		listenForMouseMotionEvents = false;
+		listenForMouseWheelEvents = false;
 		focusable = false;
 		listenForKeyEvents = false;
 		
@@ -554,7 +561,7 @@ public abstract class Node
 	{
 		if (!constraintsAreDefined || !marginsAreDefined || !paddingSetIsDefined)
 		{
-			throw new NodeUninitializedException();
+			throw new NodeUninitializedException(this);
 		}
 		
 		return new Rectangle(parentArea.getXMin() + leftConstraint.getValue(paddingSet.getRightBoundary()) + margins.getLeftValue(),

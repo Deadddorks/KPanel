@@ -9,6 +9,11 @@ import java.awt.*;
 import java.awt.event.*;
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+/**
+ * Modified JPanel that allows a programmer to easily display Nodes in a Grid format
+ * and automatically set up event handling for those Nodes
+ * @author Deaddorks
+ */
 public abstract class KPanel extends JPanel
 {
 	
@@ -165,6 +170,10 @@ public abstract class KPanel extends JPanel
 	protected void handle_keyReleased(KeyEvent e) {}
 	
 	// ----------------------------------- Listeners -----------------------------------
+	/**
+	 * MouseListener for the KPanel
+	 * @author Deaddorks
+	 */
 	private class MouseClickHandler implements MouseListener
 	{
 		
@@ -211,6 +220,10 @@ public abstract class KPanel extends JPanel
 			handle_mouseExited(e);
 		}
 	}
+	/**
+	 * MouseMotionListener for the KPanel
+	 * @author Deaddorks
+	 */
 	private class MouseMotionHandler implements MouseMotionListener
 	{
 		
@@ -233,6 +246,10 @@ public abstract class KPanel extends JPanel
 			handle_mouseMoved(e);
 		}
 	}
+	/**
+	 * KeyListener for the KPanel
+	 * @author Deaddorks
+	 */
 	private class KeyClickHandler implements KeyListener
 	{
 		
@@ -261,6 +278,10 @@ public abstract class KPanel extends JPanel
 			handle_keyReleased(e);
 		}
 	}
+	/**
+	 * MouseWheelListener for the KPanel
+	 * @author Deaddorks
+	 */
 	private class ScrollHandler implements MouseWheelListener
 	{
 		

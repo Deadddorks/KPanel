@@ -4,6 +4,10 @@ package structure.orgainization;
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+/**
+ * Allows Nodes to specify whether or not they want to be aligned with their main GridConstraints or their Paddings
+ * @author Deaddorks
+ */
 public class PaddingSet
 {
 	

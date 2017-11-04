@@ -4,6 +4,10 @@ package utilities.font;
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+/**
+ * Works together with a FontGenerator to allow for specifying some Font values, while leaving the rest up to the defaults
+ * @author Deaddorks
+ */
 public class FontSpecs
 {
 	

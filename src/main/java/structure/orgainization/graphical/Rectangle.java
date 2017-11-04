@@ -4,6 +4,10 @@ package structure.orgainization.graphical;
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+/**
+ * Used to pass information about areas between classes, primarily between the Grid and its Nodes
+ * @author Deaddorks
+ */
 public class Rectangle
 {
 	

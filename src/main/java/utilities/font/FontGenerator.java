@@ -4,6 +4,11 @@ package utilities.font;
 import java.awt.Font;
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+/**
+ * Aids in easily allowing for swift generation of Fonts, allowing a Node to specify what sort of Default Font it would like,
+ * and being able to generate fonts based on defaults and some provided values
+ * @author Deaddorks
+ */
 public class FontGenerator
 {
 	

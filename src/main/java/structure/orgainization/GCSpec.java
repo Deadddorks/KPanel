@@ -1,9 +1,13 @@
 package structure.orgainization;
 
 // ~~~~~~~~~~ Imports ~~~~~~~~~~
-import structure.grid.Grid;
+
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+/**
+ * Used by the Grid to quickly specify where to align a Node
+ * @author Deaddorks
+ */
 public class GCSpec
 {
 	

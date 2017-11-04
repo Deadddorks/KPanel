@@ -4,6 +4,10 @@ package structure.orgainization;
 import exceptions.InvalidParameterException;
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+/**
+ * Used by the Grid to organize things and aide in the implementation of CONSTANT a PERCENT alignment
+ * @author Deaddorks
+ */
 public class Constraint implements Comparable<Constraint>
 {
 	

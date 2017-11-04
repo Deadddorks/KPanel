@@ -4,6 +4,10 @@ package structure.orgainization;
 import exceptions.InvalidParameterException;
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+/**
+ * Used by Nodes to specify extra space outside of the Node between itself and its Constraint
+ * @author Deaddorks
+ */
 public class Margin
 {
 	

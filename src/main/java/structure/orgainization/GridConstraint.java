@@ -4,11 +4,19 @@ package structure.orgainization;
 import exceptions.InvalidParameterException;
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+/**
+ * Combines a Constraint and Padding to make up the organizational structure for the Grid
+ * @author Deaddorks
+ */
 public class GridConstraint implements Comparable<GridConstraint>
 {
 	
 	// ----- Label -----
 	// ~~~~~~~~~~ Constants ~~~~~~~~~~
+	
+	/**
+	 * Whether a Node should be aligned to the left/right padding of a GridConstraint or the main GridConstraint itself
+	 */
 	public enum Boundary
 	{LEFT, CENTER, RIGHT}
 	// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
