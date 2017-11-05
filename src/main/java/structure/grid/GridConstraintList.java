@@ -15,7 +15,7 @@ import java.util.List;
 public class GridConstraintList
 {
 	
-	// ----- Label -----
+	// ----- KLabel -----
 	// ~~~~~~~~~~ Constants ~~~~~~~~~~
 	
 	// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

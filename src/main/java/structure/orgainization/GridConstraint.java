@@ -11,7 +11,7 @@ import exceptions.InvalidParameterException;
 public class GridConstraint implements Comparable<GridConstraint>
 {
 	
-	// ----- Label -----
+	// ----- KLabel -----
 	// ~~~~~~~~~~ Constants ~~~~~~~~~~
 	
 	/**

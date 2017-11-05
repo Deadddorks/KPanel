@@ -11,7 +11,7 @@ package structure.orgainization;
 public class PaddingSet
 {
 	
-	// ----- Label -----
+	// ----- KLabel -----
 	// ~~~~~~~~~~ Constants ~~~~~~~~~~
 	
 	// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

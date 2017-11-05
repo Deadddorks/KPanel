@@ -11,7 +11,7 @@ import exceptions.InvalidParameterException;
 public class Margin
 {
 	
-	// ----- Label -----
+	// ----- KLabel -----
 	// ~~~~~~~~~~ Constants ~~~~~~~~~~
 	
 	// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

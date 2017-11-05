@@ -17,7 +17,7 @@ import java.awt.event.*;
 public abstract class KPanel extends JPanel
 {
 	
-	// ----- Label -----
+	// ----- KLabel -----
 	// ~~~~~~~~~~ Constants ~~~~~~~~~~
 	
 	// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

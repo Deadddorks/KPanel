@@ -11,7 +11,7 @@ import exceptions.InvalidParameterException;
 public class Constraint implements Comparable<Constraint>
 {
 	
-	// ----- Label -----
+	// ----- KLabel -----
 	// ~~~~~~~~~~ Constants ~~~~~~~~~~
 	
 	// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

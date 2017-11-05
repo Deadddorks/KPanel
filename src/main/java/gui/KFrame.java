@@ -11,7 +11,7 @@ import javax.swing.JFrame;
 public abstract class KFrame extends JFrame
 {
 	
-	// ----- Label -----
+	// ----- KLabel -----
 	// ~~~~~~~~~~ Constants ~~~~~~~~~~
 	private final boolean DEFAULT_RESIZABLE = false;
 	

@@ -25,7 +25,7 @@ import java.util.function.Consumer;
 public abstract class Node
 {
 	
-	// ----- Label -----
+	// ----- KLabel -----
 	// ~~~~~~~~~~ Constants ~~~~~~~~~~
 	
 	// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -158,11 +158,6 @@ public abstract class Node
 		constraintsAreDefined = false;
 		paddingSetIsDefined = false;
 		marginsAreDefined = false;
-		onMousePressedAction = e -> {};
-		onMouseEnteredAction = e -> {};
-		onMouseExitedAction = e -> {};
-		
-		onMouseMovedAction = e -> {};
 		
 		// Event Handling
 		listenForMouseEvents = false;
@@ -539,7 +534,9 @@ public abstract class Node
 	 */
 	public void draw(Graphics g, final Rectangle parentArea)
 	{
-		display(g, getNodeArea(parentArea));
+		Rectangle nodeArea = getNodeArea(parentArea);
+		g.setClip(nodeArea.getXMin(), nodeArea.getYMin(), nodeArea.getWidth(), nodeArea.getHeight());
+		display(g, nodeArea);
 	}
 	
 	/**

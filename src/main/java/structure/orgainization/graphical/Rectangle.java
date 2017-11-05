@@ -11,7 +11,7 @@ package structure.orgainization.graphical;
 public class Rectangle
 {
 	
-	// ----- Label -----
+	// ----- KLabel -----
 	// ~~~~~~~~~~ Constants ~~~~~~~~~~
 	
 	// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -85,6 +85,23 @@ public class Rectangle
 	public int getHeight()
 	{
 		return yMax - yMin;
+	}
+	
+	/**
+	 * Gets the X coord of the center of the Rectangle
+	 * @return the X coord of the center of the Rectangle
+	 */
+	public int getCenterX()
+	{
+		return (xMin + xMax) / 2;
+	}
+	/**
+	 * Gets the Y coord of the center of the Rectangle
+	 * @return the Y coord of the center of the Rectangle
+	 */
+	public int getCenterY()
+	{
+		return (yMin + yMax) / 2;
 	}
 	
 	/**

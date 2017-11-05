@@ -12,14 +12,13 @@ import java.awt.Font;
 public class FontGenerator
 {
 	
-	// ----- Label -----
+	// ----- KLabel -----
 	// ~~~~~~~~~~ Constants ~~~~~~~~~~
 	
 	// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	// ~~~~~~~~~~ Variables ~~~~~~~~~~
 	private String defaultFontName = Font.DIALOG;
 	private int defaultFontStyle = Font.PLAIN;
-	private int defaultFontSize = 15;
 	// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 	
 	/**
@@ -30,20 +29,18 @@ public class FontGenerator
 	public Font getFont(final FontSpecs specs)
 	{
 		return generateFont((specs.isNameDefined() ? specs.getName() : defaultFontName),
-				(specs.isStyleDefined() ? specs.getStyle() : defaultFontStyle),
-				(specs.isSizeDefined() ? specs.getSize() : defaultFontSize));
+				(specs.isStyleDefined() ? specs.getStyle() : defaultFontStyle));
 	}
 	
 	/**
 	 * Generates a Font
 	 * @param name
 	 * @param style
-	 * @param size
 	 * @return
 	 */
-	private Font generateFont(final String name, final int style, final int size)
+	private Font generateFont(final String name, final int style)
 	{
-		return new Font(name, style, size);
+		return new Font(name, style, 0);
 	}
 	
 	public void setDefaultFontName(final String name)
@@ -57,14 +54,6 @@ public class FontGenerator
 	public void setDefaultFontStyle(final int style)
 	{
 		this.defaultFontStyle = style;
-	}
-	/**
-	 * Sets the default Font size
-	 * @param size the desired default Font size
-	 */
-	public void setDefaultFontSize(final int size)
-	{
-		this.defaultFontStyle = size;
 	}
 	
 }

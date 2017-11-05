@@ -22,7 +22,7 @@ import java.util.List;
 public class Grid
 {
 	
-	// ----- Label -----
+	// ----- KLabel -----
 	// ~~~~~~~~~~ Constants ~~~~~~~~~~
 	public enum Orientation {VERTICAL, HORIZONTAL}
 	// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

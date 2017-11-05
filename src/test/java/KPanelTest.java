@@ -1,7 +1,8 @@
 import gui.KFrame;
 import gui.KPanel;
 import structure.grid.Grid;
-import structure.nodes.Button;
+import structure.nodes.KButton;
+import structure.nodes.KLabel;
 import structure.orgainization.AlignmentType;
 import structure.orgainization.GCSpec;
 import structure.orgainization.GridConstraint;
@@ -26,8 +27,10 @@ public class KPanelTest extends KPanel
 		grid.addConstraint(Grid.Orientation.HORIZONTAL, new GridConstraint(0.5f, 10));
 		grid.addConstraint(Grid.Orientation.HORIZONTAL, new GridConstraint(0.75f, 10));
 		
-		Button b = new Button();
-		grid.addNode(b, new GCSpec(AlignmentType.PERCENT, 1), new GCSpec(AlignmentType.PERCENT, 1));
+		KButton button = new KButton().setCornerRadius(.1f);
+		button.setOnMouseClicked(e -> System.out.println("Yes"));
+		button.getLabel().setText("Button");
+		grid.addNode(button, new GCSpec(AlignmentType.PERCENT, 0), new GCSpec(AlignmentType.PERCENT, 0));
 		
 	}
 	
